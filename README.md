@@ -108,12 +108,27 @@ git push -u origin branchName
     </td>
      <td>Flow the process if repo is not connected 
      <ul>
-       <li>**Direct HTTP Pull:** git clone https://github.com/username/project.git</li>
+       <li><b> Direct HTTP Pull:</b> git clone https://github.com/username/project.git </li>
+        <li><b>Branch selection HTTP Pull:</b> git clone -b develop https://github.com/username/project.git </li>
+        <li><b> Direct SSH Pull:</b> git clone git@github.com:username/project.git </li>
+        <li><b>Branch selection HTTP Pull:</b> git clone -b develop git@github.com:username/repository.git </li>
      </ul>
      </td>
   </tr>
   <tr>
-    <th>Initial Push</th>
-    <th>Initial Pull</th>
+    <th>Already connected repo Push</th>
+    <th>Already connected repo Pull</th>
   </tr>
+   <tr>
+      <td>
+         <ul>
+            <li>git add .</li>
+            <li>git commit -m "Initial commit"</li>
+            <li>git push -u origin BranchName</li>
+         </ul>
+      </td>
+      <td>
+         git pull origin BranchName
+      </td>
+   </tr>
 </table>
